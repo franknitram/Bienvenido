@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.franknitram.bienvenido.MainActivity">
+
+    <!-- view for AdMob Interstitial Ad -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/_2fc53db72cf219e20fd61969cbf4461c_marcianito_miprimer_proyecto_android"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:contentDescription=""
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/next_level_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/entrar"
+        android:elevation="0dp"
+        tools:targetApi="lollipop"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        tools:targetApi="lollipop"
+        android:text="@string/bienvenido"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+</RelativeLayout>

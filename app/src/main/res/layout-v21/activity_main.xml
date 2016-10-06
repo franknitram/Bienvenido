@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.franknitram.bienvenido.MainActivity">
+
+    <!-- view for AdMob Interstitial Ad -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/_2fc53db72cf219e20fd61969cbf4461c_marcianito_miprimer_proyecto_android"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription=""
+        android:cropToPadding="true"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:adjustViewBounds="true" />
+
+    <Button
+        android:id="@+id/next_level_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/entrar"
+        android:elevation="0dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/app_title"
+        android:layout_alignEnd="@+id/app_title"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenido"
+        android:textAppearance="@android:style/TextAppearance.Material.Display3"
+        android:layout_above="@+id/next_level_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        tools:textColor="@color/common_google_signin_btn_text_dark_default" />
+</RelativeLayout>
